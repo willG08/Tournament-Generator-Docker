@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tournament Generator</title>
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js"></script>
+    <script src="script/confetti.js"></script>
+
+
+</head>
+    <body>
+    <div id="BodyImage">
+        <header>
+            <h1 >Welcome to Will's Tournament Generator</h1>
+            <h2>Enjoy!</h2>
+        </header>
+        <div id="Content">
+            <h2 class="ContentHeader" id="ContentHeader">Tournament Bracket Generator</h2>
+
+            <form id="form" onsubmit="generateBracket(event)">
+                <label for="tournamentName">
+                    <h5 class = "ContentTextHeaders">Tournament Name</h5>
+                </label>
+                <input type="text" id="tournamentName" name="tournamentName" required>
+
+                <label for="names">
+                    <h5 class="ContentTextHeaders">Players</h5>
+                    <p class="ContentText">Write the name of each player on a line</p>
+                </label>
+                <textarea id="names" name="names" rows="16" cols="50" required></textarea>
+
+                <input type="submit" value="Submit" id="submit" class="submit" class="button" >
+            </form>
+
+            <div id="bracketName"></div>
+
+            <div id="bracket"></div>
+        
+        </div>
+        <footer>
+            <h2>Thanks for coming! Hope you enjoyed it!</h2>
+        </footer>
+    
+    </div>
+    </body>
+
+</html>
